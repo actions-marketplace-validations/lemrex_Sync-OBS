@@ -8,11 +8,11 @@ if [ -z "$SECRET_KEY" ]; then
   echo "SK is not set. Quitting."
   exit 1
 fi
-if [ -z "$BUCKET_NAME" ]; then
+if [ -z "$REGION" ]; then
   echo "bucket name is not set. Quitting."
   exit 1
 fi
-if [ -z "$REGION" ]; then
+if [ -z "$BUCKET_NAME" ]; then
   echo "bucket name is not set. Quitting."
   exit 1
 fi
