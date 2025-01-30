@@ -1,4 +1,4 @@
-name: 'Huawei Cloud OBS Data Sync Action'
+name: 'Huawei Cloud OBS Sync Action'
 description: 'Sync files or folders to Huawei Cloud OBS using obsutils.'
 author: 'Emeka Raphael'
 branding:
