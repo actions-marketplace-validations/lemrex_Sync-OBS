@@ -26,7 +26,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    ACCESS_KYE: ${{ inputs.accessId }}
+    ACCESS_KEY: ${{ inputs.accessId }}
     SECRET_KEY: ${{ inputs.secretKey }}
     REGION: ${{ inputs.endPoint }}
     BUCKET_NAME: ${{ inputs.obsBucket }}
