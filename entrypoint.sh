@@ -1,18 +1,22 @@
 #!/bin/sh -l
 
-if [ -z "$INPUT_ACCESS_KEY" ]; then
-  echo "ak is not set. Quitting."
+if [ -z "$ACCESS_KEY" ]; then
+  echo "AK is not set. Quitting."
   exit 1
 fi
-if [ -z "$INPUT_SECRET_KEY" ]; then
-  echo "sk is not set. Quitting."
+if [ -z "$SECRET_KEY" ]; then
+  echo "SK is not set. Quitting."
   exit 1
 fi
-if [ -z "$INPUT_BUCKET_NAME" ]; then
+if [ -z "$BUCKET_NAME" ]; then
   echo "bucket name is not set. Quitting."
   exit 1
 fi
-if [ -z "$INPUT_LOCAL_FILE_PATH" ]; then
+if [ -z "$REGION" ]; then
+  echo "bucket name is not set. Quitting."
+  exit 1
+fi
+if [ -z "$LOCAL_PATH" ]; then
   echo "local file path is not set. Quitting."
   exit 1
 fi
@@ -25,8 +29,8 @@ echo $decompressingDirectory
 chmod 755 -R $decompressingDirectory/
 
 # Initializing obsutil
-./$decompressingDirectory/obsutil config -i=${INPUT_ACCESS_KEY} -k=${INPUT_SECRET_KEY} -e=obs.${INPUT_REGION}.myhuaweicloud.com 
+./$decompressingDirectory/obsutil config -i=${ACCESS_KEY} -k=${SECRET_KEY} -e=obs.${REGION}.myhuaweicloud.com 
 
 # Usync file or diretory
 
-./$decompressingDirectory/obsutil sync ${INPUT_LOCAL_FILE_PATH} obs://${INPUT_BUCKET_NAME}/${INPUT_OBS_FILE_PATH}   
+./$decompressingDirectory/obsutil sync ${LOCAL_PATH} obs://${BUCKET_NAME}/
