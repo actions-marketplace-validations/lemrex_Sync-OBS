@@ -4,7 +4,7 @@
 ---
 # Huawei Cloud OBS Sync Action
 
-![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Sync%2DOBS-blue.svg?colorA=24292e&colorB=0366d6&style=flat-square)  
+![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Sync--OBS-blue)  
 This GitHub Action allows you to easily sync files to **Huawei Cloud OBS** (Object Storage Service) using obsutil. It helps automate the process of transferring/synchronizing files from your repository or build artifacts to OBS in your cloud environment.
 
 ## Features
