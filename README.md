@@ -27,9 +27,9 @@ Before using this action, make sure you have the following:
 |---------------|---------------------------------------------------------------|----------|----------------------------------------------|
 | `accessKey`    | The Access Key ID for your Huawei Cloud OBS account.[`More Info`](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)                              | Yes      | `${{ secrets.ACCESS_KEY }}`                  |
 | `secretKey`   | The Secret Key for your Huawei Cloud OBS account. [`More Info`](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)                              | Yes      | `${{ secrets.SECRET_KEY }}`                 |
-| `region`    | The region where your OBS bucket is located (e.g., af-south-1). [`More Info`](https://support.huaweicloud.com/intl/en-us/productdesc-obs/obs_03_0152.html)                           | Yes      | `https://obs.ap-southeast-1.myhuaweicloud.com` |
+| `region`    | The region where your OBS bucket is located (e.g., af-south-1). [`More Info`](https://support.huaweicloud.com/intl/en-us/productdesc-obs/obs_03_0152.html)                           | Yes      | `af-south-1` |
 | `obsBucket`   | The OBS bucket name or path where the files will be synced to.                                              | Yes      | `my-bucket`                     |
-| `localPath`   | The local file or folder you want to sync to OBS.             | Yes      | `local ./dist or file to sync`                            |
+| `localPath`   | The local file or folder you want to sync to OBS.             | Yes      | ` dist/ or file to sync`                            |
 
 ## Example Usage
 Here’s an example of how to use this action in your GitHub workflow:
