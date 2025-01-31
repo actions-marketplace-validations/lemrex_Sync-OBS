@@ -9,7 +9,7 @@ if [ -z "$SECRET_KEY" ]; then
   exit 1
 fi
 if [ -z "$REGION" ]; then
-  echo "bucket name is not set. Quitting."
+  echo "region is not set. Quitting."
   exit 1
 fi
 if [ -z "$BUCKET_NAME" ]; then
@@ -32,5 +32,4 @@ chmod 755 -R $decompressingDirectory/
 ./$decompressingDirectory/obsutil config -i=${ACCESS_KEY} -k=${SECRET_KEY} -e=obs.${REGION}.myhuaweicloud.com 
 
 # Usync file or diretory
-
 ./$decompressingDirectory/obsutil sync ${LOCAL_PATH} obs://${BUCKET_NAME}/

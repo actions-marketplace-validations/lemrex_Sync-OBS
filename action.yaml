@@ -13,10 +13,10 @@ inputs:
     description: 'Secret Key for Huawei Cloud OBS'
     required: true
   region:
-    description: 'Endpoint for Huawei Cloud OBS' 
+    description: 'Region for Huawei Cloud OBS' 
     required: true
   obsBucket:
-    description: 'OBS bucket path'  
+    description: 'OBS bucket name'  
     required: true
   localPath:
     description: 'Path to the local folder or file for synchronization'
